@@ -1,4 +1,3 @@
-
 # Document QA System with Retrieval-Augmented Generation (RAG)
 
 ## Project Overview
@@ -20,8 +19,7 @@ flowchart TD
     F --> G(Build enhanced Prompt)
     G --> H(Generate answer using Groq API with Llama3-8B)
     H --> I(Output title + answer + evidence)
-
-
+```
 ## Tech Stack
 Embedding Model: BAAI/bge-small-en
 Retriever: FAISS (IndexFlatIP) for semantic search
@@ -44,11 +42,6 @@ bash
 pip install openai faiss-cpu sentence-transformers
 
 2. Set your Groq API Key
-python
-import openai
-
-openai.api_key = "Groq API Key"
-openai.api_base = "https://api.groq.com/openai/v1"
 
 3. Run the main pipeline
 Upload the dataset
